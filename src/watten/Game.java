@@ -226,7 +226,7 @@ public class Game {
     }
     
     public boolean isCardWinning(Card a, Card b) {
-        return a.score(masterColor, masterType) > b.score(masterColor, masterType);
+        return a.score(masterColor, masterType) >= b.score(masterColor, masterType);
     }
 
     public int getHumanScore() {
